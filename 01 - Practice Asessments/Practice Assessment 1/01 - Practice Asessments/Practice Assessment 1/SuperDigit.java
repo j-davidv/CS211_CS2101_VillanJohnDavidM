@@ -9,13 +9,11 @@ class SuperDigit {
         int original = num;
 
         while (num >= 10) {
-            int sum = 0;
-            while (num > 0) {
+            long num = 0;
+            while (numb > 0) {
                 sum += num % 10;
                 num /= 10;
             }
-            num = sum;
         }
-        System.out.println("Super Digit of " + original + ": " + num);
     }
 }
